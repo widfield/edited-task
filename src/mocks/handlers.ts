@@ -11,11 +11,15 @@ const users = [
 export const handlers = [
   rest.post("/login", async (req, res, ctx) => {
     const { username, password } = await req.json();
-    sessionStorage.setItem("is-authenticated", "true");
-    sessionStorage.setItem("username", username);
-    const user = users.find((e) => e.username === username);
 
-    return res(user?.password === password ? ctx.status(200) : ctx.status(401));
+    const user = users.find((e) => e.username === username);
+    if (user?.password === password) {
+      sessionStorage.setItem("is-authenticated", "true");
+      sessionStorage.setItem("username", username);
+      return res(ctx.status(200));
+    }
+
+    return res(ctx.status(401));
   }),
   rest.get("/user", (req, res, ctx) => {
     const isLoggedIn = sessionStorage.getItem("is-authenticated");
