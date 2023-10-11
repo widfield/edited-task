@@ -4,6 +4,7 @@
 
 ```
 npm install
+cd edited-task
 npm run dev
 ```
 
