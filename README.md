@@ -2,7 +2,5 @@
 
 ## Install and run
 
-`
-npm isntall
-npm run dev
-`
+`npm install`
+`npm run dev`
