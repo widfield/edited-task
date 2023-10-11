@@ -1,0 +1,14 @@
+.checkboxWrapper {
+  display: flex;
+  cursor: pointer;
+}
+
+.checkbox {
+  accent-color: var(--primary);
+  cursor: pointer;
+}
+
+.label {
+  margin-left: 3px;
+  cursor: pointer;  
+}

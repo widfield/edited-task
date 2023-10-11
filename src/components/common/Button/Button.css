@@ -1,0 +1,16 @@
+.button {
+  background: var(--background);
+  color: #fff;
+  padding: 17px 30px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  width: max-content;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}

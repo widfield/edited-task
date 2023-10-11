@@ -1,0 +1,27 @@
+:root {
+  --primary: #5038ed;
+  --secondary: #9181f4;
+  --background: linear-gradient(
+    217.64deg,
+    var(--secondary) -5.84%,
+    var(--primary) 106.73%
+  );
+  --inputBgr: #f3f1fe;
+  --fontColor: #333333;
+  --formBgr: #ffffff;
+
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-image: var(--background);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
